@@ -15,8 +15,6 @@ This project is a personal website for an old man who wishes to share his life e
 - [QR Code](#qr-code)
 - [Q&A](#qa)
 - [Technologies Used](#technologies-used)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## About Me
 
