@@ -8,6 +8,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
+  margin-top: 5%;
 }
 
 @keyframes gradient {
@@ -40,6 +41,12 @@ hr.rounded {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: #7cb1c4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .menu img {
@@ -69,7 +76,7 @@ hr.rounded {
 }
 
 .menu a:hover {
-  background-color: rgb(107, 181, 190, 0.65);
+  background-color: rgba(86, 130, 136, 0.65);
   color: white;
 }
 
@@ -92,9 +99,6 @@ hr.rounded {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.sticky {
 }
 
 /* cards for photos */
@@ -159,26 +163,31 @@ hr.rounded {
 
 /* like button */
 
+/* question */
+.questions {
+  display: grid;
+  gap: 1em;
+  max-width: 1000px;
+  padding: 1em 0em;
+  place-self: center;
+  position: relative;
+  width: calc(100% - 2em);
+  z-index: 2;
+  width: 80%;
+}
+
+.question {
+  padding: 5%;
+}
+
 /* form */
 .my-form {
   width: 500px;
 }
 
-.my-form input[type="text"],
-select {
-  width: 32%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: black;
-}
-
 .my-form input[type="email"],
 select {
-  width: 88%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -214,7 +223,7 @@ select {
 }
 
 .my-form input[type="submit"] {
-  width: 100%;
+  width: 50%;
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
