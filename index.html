@@ -180,13 +180,14 @@
         <br />
         <h1>Contact Me</h1>
         <div class="my-form">
-          <form action="#">
+          <form action="mailto:cham@post.bgu.ac.il" method="post" enctype="text/plain">
             <label for="email">E-Mail</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="example@gmail.com"
+              required
             />
 
             <label for=textarea>Message</label>
@@ -194,20 +195,21 @@
             type="text"
             id="textarea"
             name="textarea"
-            placeholder="Enter text here...">
-            </textarea>
+            placeholder="Enter text here..."
+            required></textarea>
 
             <label for="emoji">Emoji</label>
             <select             
             type="emoji"
             id="emoji"
-            name="emoji">
+            name="emoji"
+            required>
               <option value="smile">&#128512</option>
               <option value="happy">&#128516</option>
               <option value="hearts">&#128525</option>
             </select>
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" id="submit-btn"/>
           </form>
         </div>
         <br />
